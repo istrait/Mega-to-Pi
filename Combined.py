@@ -45,7 +45,7 @@ while True:
                         camera.annotate_text = now_string + ' ' + data
                         time.sleep(2)
                         #  Save for submit?
-                        fileName = '/home/pi/Desktop/Pics' + time.strftime("%H") + '_hours_img.jpg'
+                        fileName = '/home/pi/Desktop/Pics/' + time.strftime("%H") + '_hours_img.jpg'
                         for filename in camera.capture_continuous(fileName):
                                 print('Capturing %s' % filename)
                                 print ('Picture Saved')
